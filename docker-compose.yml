@@ -3,10 +3,10 @@ services:
   postgres:
     image: postgres:12-alpine
     ports:
-      - '5432:5432'
+      - '5433:5432'
     volumes:
       - ./data:/var/lib/postgres/data
     environment:
-      - POSTGRES_DB=app2
+      - POSTGRES_DB=app4
       - POSTGRES_USER=app
       - POSTGRES_PASSWORD=789456123
